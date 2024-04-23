@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add CSS file for styling -->
+</head>
+<body>
+    <div class="banner">
+        <h1>Perfectly Portioned Fitness</h1>
+        <p>WEB-115 Section 0004</p>
+        <h2>Build Your Meal Plan</h2>
+    </div>
+    <form id="mealPlanForm">
+        <label for="mondayBreakfast">Monday Breakfast:</label>
+        <input type="text" id="mondayBreakfast" name="mondayBreakfast" required><br><br>
+        <!-- Add input fields for other meals -->
+
+        <!-- Add input fields for days of the week -->
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="goal">Goal for the Week:</label>
+        <textarea id="goal" name="goal" required></textarea><br><br>
+    </form>
+    <button onclick="generateMealPlan()">Generate Meal Plan</button> <!-- Button to generate meal plan -->
+    <button onclick="clearPlanner()">Clear Planner</button>
+    <button onclick="printPlanner()">Print Planner</button>
+    <button onclick="downloadPlanner()">Download Planner</button>
+    <script src="projectJS.js"></script> <!-- Include JavaScript file -->
+</body>
+</html>
